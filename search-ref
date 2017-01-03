@@ -41,7 +41,7 @@ var SearchPage = React.createClass({
   },
   componentWillMount: function() {
     $.ajax({
-      url: "https://insiderapi.herokuapp.com/companies?search=" + this.props.params.searchTerm,
+      url: "http://cherrylime.youna.co/companies?search=" + this.props.params.searchTerm,
       dataType: "json",
       success: function(results) {
         this.setState({results: results})
@@ -53,7 +53,7 @@ var SearchPage = React.createClass({
   },
   componentWillReceiveProps: function(nextProps) {
     $.ajax({
-      url: "https://insiderapi.herokuapp.com/companies?search=" + nextProps.params.searchTerm,
+      url: "http://cherrylime.youna.co/companies?search=" + nextProps.params.searchTerm,
       dataType: "json",
       success: function(results) {
         this.setState({results: results})
@@ -77,7 +77,7 @@ var SearchPage = React.createClass({
 
 *************************
 
-SEARCH RESULTS 
+SEARCH RESULTS
 
 var SearchResults = React.createClass({
   render: function() {

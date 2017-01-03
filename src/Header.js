@@ -8,23 +8,21 @@ const { connector } = require('./Store')
 var Header = React.createClass({
 
   handleSearchTermEvent (event) {
-    this.props.setSearchTerm(event.target.value)
+    event.preventDefault()
+    this.props.setSearchTerm(this.refs.searchTerm.value)
+    browserHistory.push('/search')
   },
 
-  gotoSearch (event) {
-    browserHistory.push('search')
-    event.preventDefault()
-  },
 
   render: function() {
     return(
       <header className="HeaderBar header">
           <Link to='/' className='brand-link'>
-            <img src='/smarter-bear-logo.png' alt="bear-logo" className="logo"/>
+            <img src='/smarter-bear-logo.png' alt="bear-logo" className="header-logo"/>
             <div className="logo-title">Smarter Bear</div>
           </Link>
-        <form onSubmit={this.gotoSearch}>
-          <input type='text' className='searchBar' placeholder='Search by company or ticker' value={this.props.searchTerm} onChange={this.handleSearchTermEvent} onKeyPress={this.handleKeyPress} />
+        <form onSubmit={this.handleSearchTermEvent.bind(this)}>
+          <input type='text' className='searchBar' placeholder='Search by company or ticker' ref="searchTerm"   />
         </form>
       </header>
     )

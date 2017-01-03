@@ -3,8 +3,8 @@
   background-color: #3B4756;
   font-size: 22px;
   text-align: center;
-  margin-left: 35px;
-  margin-right: 35px;
+  margin-left: 3.5%;
+  margin-right: 3.5%;
   /*width: 95%;*/
 }
 
@@ -17,32 +17,61 @@
   letter-spacing: .07em;
   margin-bottom: 20px;
   font-size: 25px;
-}  
+}
 .insider-card {
-  box-shadow: 2px 2px 4px 0 #ccc;
+/*  box-shadow: 2px 2px 4px 0 #ccc;*/
   box-sizing: border-box;
   display: inline-block;
   text-align: left;
-  margin: 0 1em 1.5em;
+  margin: .2em;
   padding: 1em;
   padding-right: 35px;
-  width: 100%;
-  height: 20%;
+  width: 80%;
+  height: 235px;
   background-color: #fff;
   color: #33424D;
 }
 .insider-card li {
   padding-left: 0;
 }
-.logo img {
-  background-color: #ccc;
+.logo {
   display: inline-block;
-  padding: 1em;
-  height: 150px;
-  width: 130px;
+vertical-align: top;
+margin-right: 75px;
+padding-top: 15px;
+width: 70px;
+}
+
+.logo img {
+  display: inline-block;
+  /*padding: 1em;*/
+
+  width: 125px;
   float: left;
 }
+
+.stats-container {
+  text-align: center;
+}
+
 .stats {
   padding-left: 5%;
   display: inline-block;
+  text-align: left;
+  font-family: 'Roboto', serif;
+  width: 50%;
+  vertical-align: top;
+  font-size: 20px;
+  margin-bottom:5px;
+}
+
+.stats p {
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.top-insiders h1 {
+  padding-top: 50px;
+  padding-bottom: 30px;
 }

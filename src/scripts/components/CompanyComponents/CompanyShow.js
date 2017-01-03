@@ -1,4 +1,4 @@
-var React = require ('react')
+  var React = require ('react')
 import CompanyHeader from './CompanyHeader'
 import CompanyBubbleChart from './CompanyBubbleChart'
 import Header from '../../../Header'

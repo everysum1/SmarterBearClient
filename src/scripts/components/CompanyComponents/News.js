@@ -11,6 +11,7 @@ const News = React.createClass({
 
   searchArticles: function(query = this.props.companyName) {
     var url = `https://webhose.io/search?token=${config.WEBHOSE_TOKEN}&format=json&q=thread.title%3A(${query})%20language%3A(english)%20site_category%3Afinance%20organization%3A%22${query}%22%20(site_type%3Anews%20OR%20site_type%3Ablogs)&ts=1476079876068`
+    console.log(url)
     Request.get(url).then((response) => {
       this.setState({
         articles: response.body.posts.slice(0, 5)
@@ -24,10 +25,13 @@ const News = React.createClass({
 
   render: function() {
     var articles = _.map(this.state.articles, (article) => {
+      console.log(article.thread.main_image)
       return (
         <li key={article.thread.uuid}>
+
+
           <a href={article.thread.url}>
-            <img className='news-img' src={article.thread.main_image} alt='main-img' />
+            <img className='news-img' src={`http://lorempixel.com/900/700/technics/?t=${Math.random()}`} alt='main-img' />
           </a>
 
           <div className="news-text">

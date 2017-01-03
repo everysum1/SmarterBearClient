@@ -14,7 +14,7 @@ var TopInsiders = React.createClass({
       success: function(data) {
         console.log(data.top_5_insiders)
         this.setState({data: data
-           
+
                     })
       }.bind(this),
       error: function(xhr, status, err) {
@@ -25,10 +25,12 @@ var TopInsiders = React.createClass({
   render: function() {
     var i = 1
     var insiders = _.map(this.state.data.top_5_insiders, (insider) => {
-      i ++ 
+      i ++
     return(
       <li className="insider-card" key={i}>
         <div>
+
+          <div className="stats-container">
           <div className="logo">
             <img src='/smarter-bear-logo.png' alt="bear-logo" className="logo"/>
           </div>
@@ -38,6 +40,7 @@ var TopInsiders = React.createClass({
             <p>Position: <strong>{insider.position}</strong></p>
             <p>Trades this quarter: <strong>{insider.total_trades}</strong></p>
             <p>Total value this quarter: <strong>{insider.total_trade_value}</strong></p>
+          </div>
           </div>
         </div>
       </li>
@@ -50,7 +53,7 @@ var TopInsiders = React.createClass({
         <ul>{insiders}</ul>
       </div>
     )
-  } 
+  }
 })
 
 export default TopInsiders

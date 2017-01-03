@@ -2,7 +2,7 @@
   padding-top: 10px;
   background-color: #fff;
   width: 100%;
-  height: 1000px;
+  height: 104%;
 }
 
 .news-header {
@@ -60,7 +60,7 @@
 .news-img {
 /*  height: 100px;*/
   display: inline-block;
-  width:10%;
+  width:18%;
   vertical-align: top;
   margin-right: 2%;
 

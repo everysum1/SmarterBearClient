@@ -8,9 +8,9 @@ API repo can be found [here](https://www.github.com/everysum1/insiderAPI), and d
 
 You can check out the live version [here] (https://yourinsider.herokuapp.com). 
 
-![homepage] (https://github.com/everysum1/insiderAPI/blob/development/app/assets/images/SmarterBearHomepage.png)
+![homepage](https://github.com/izzydoesit/SmarterBearAPI/blob/development/app/assets/images/SmarterBearHomepage.png)
 
-![company-page] (https://github.com/everysum1/insiderAPI/blob/development/app/assets/images/SmarterBearCompany.png)
+![company-page](https://github.com/izzydoesit/SmarterBearAPI/blob/development/app/assets/images/SmarterBearCompany.png)
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.

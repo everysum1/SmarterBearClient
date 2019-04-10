@@ -6,7 +6,7 @@ This React front end application renders data and visualizations from our Rails 
 
 API repo can be found [here](https://www.github.com/everysum1/insiderAPI), and does all the back end work of requesting insider transactions from SEC servers, scrapeing FTP servers for corresponding XML files, parsing files into database objects using [Nokogiri](https://www.nokogiri.org), and serving up JSON-formatted information to the front end. 
 
-You can check out the live version [here] (https://yourinsider.herokuapp.com). 
+You can check out the live version [here](https://smarterbear.herokuapp.com). 
 
 ![homepage](https://github.com/izzydoesit/SmarterBearAPI/blob/development/app/assets/images/SmarterBearHomepage.png)
 
